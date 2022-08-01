@@ -1,13 +1,23 @@
-import {Component, OnInit, ViewContainerRef} from '@angular/core';
+import { Component } from '@angular/core';
+
+import { QuestionService } from './question.service';
+import { QuestionBase } from './question-base';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <div>
+      <h2>Job Application for Heroes</h2>
+      <app-dynamic-form [questions]="questions$ | async"></app-dynamic-form>
+    </div>
+  `,
+  providers:  [QuestionService]
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
+  questions$: Observable<QuestionBase<any>[]>;
 
-  constructor(private vcr: ViewContainerRef) {}
-
-  ngOnInit(): void {
+  constructor(service: QuestionService) {
+    this.questions$ = service.getQuestions();
   }
 }
