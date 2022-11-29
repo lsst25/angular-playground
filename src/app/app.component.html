@@ -1,10 +1,4 @@
-<div appParentDir>
-    The appParentDir provides dependency for app-child and appDir with @Host() decorator <br>
-    If we remove appParentDir, app-child and appDir will not get dependency, even it is provided in App component <br>
-    Also if we change @Host() on @Self() in app-child or appDir it will not get dependency
-
-    <app-child appDir></app-child>
-
-    But in case of HostListener it means the element directive is attached to <br>
-    It will listen to the click events only on app-child component
-</div>
+<nav>
+  <a routerLink="self-vs-host">Self vs Host</a>
+</nav>
+<router-outlet></router-outlet>

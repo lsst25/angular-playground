@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
-import { DirDirective } from './dir.directive';
-import { ParentDirDirective } from './parent-dir.directive';
+import { DirDirective } from './self-vs-host/dir.directive';
+import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { SelfVsHostComponent } from './self-vs-host/self-vs-host.component';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,11 @@ import { ParentDirDirective } from './parent-dir.directive';
     ChildComponent,
     DirDirective,
     ParentDirDirective,
+    SelfVsHostComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
