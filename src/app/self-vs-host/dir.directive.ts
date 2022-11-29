@@ -1,4 +1,4 @@
-import {Directive, Host, HostListener, OnInit, Optional, Self} from '@angular/core';
+import {Directive, Host, HostListener, OnInit, Optional} from '@angular/core';
 import {DependencyService} from "./dependency.service";
 
 @Directive({
