@@ -7,6 +7,7 @@ import { DirDirective } from './self-vs-host/dir.directive';
 import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { SelfVsHostComponent } from './self-vs-host/self-vs-host.component';
+import { IncludePathsComponent } from './include-paths/include-paths.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SelfVsHostComponent } from './self-vs-host/self-vs-host.component';
     DirDirective,
     ParentDirDirective,
     SelfVsHostComponent,
+    IncludePathsComponent,
   ],
   imports: [
     BrowserModule,
