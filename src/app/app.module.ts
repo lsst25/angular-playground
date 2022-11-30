@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
+import { ChildComponent } from './self-vs-host/child/child.component';
 import { DirDirective } from './self-vs-host/dir.directive';
 import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
 import { AppRoutingModule } from './app-routing.module';

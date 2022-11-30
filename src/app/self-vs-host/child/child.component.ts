@@ -1,5 +1,5 @@
 import {Component, Host, OnInit, Optional} from '@angular/core';
-import {DependencyService} from "../self-vs-host/dependency.service";
+import {DependencyService} from "../dependency.service";
 
 @Component({
   selector: 'app-child',
