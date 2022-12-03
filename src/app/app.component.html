@@ -1,6 +1,19 @@
-<nav>
-  <a routerLink="self-vs-host">Self vs Host</a>
-  |
-  <a routerLink="include-paths">includePaths</a>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLink="self-vs-host"
+           routerLinkActive="active">Self vs Host</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLink="include-paths"
+           routerLinkActive="active">includePaths</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
