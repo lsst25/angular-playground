@@ -1,6 +1,6 @@
 <div appParentDir>
-  The appParentDir provides dependency for app-child and appDir with @Host() decorator <br>
-  If we remove appParentDir, app-child and appDir will not get dependency, even it is provided in App component <br>
+  The appParentDir provides dependency for the app-child component and appDir directive with the @Host() decorator <br>
+  If we remove appParentDir, app-child and appDir will not get dependency, even it is provided in the parent component's metadata <br>
   Also if we change @Host() on @Self() in app-child or appDir it will not get dependency
 
   <app-child appDir></app-child>
