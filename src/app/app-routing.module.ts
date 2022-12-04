@@ -6,6 +6,7 @@ import { IncludePathsComponent } from "./include-paths/include-paths.component";
 const routes: Routes = [
   { path: 'self-vs-host', component: SelfVsHostComponent },
   { path: 'include-paths', component: IncludePathsComponent },
+  { path: '**', redirectTo: 'self-vs-host' },
 ];
 
 @NgModule({
