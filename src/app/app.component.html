@@ -3,17 +3,17 @@
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
         <a class="nav-link"
-           routerLink="self-vs-host"
+           [routerLink]="appRoutes.SELF_VS_HOST"
            routerLinkActive="active">Self vs Host</a>
       </li>
       <li class="nav-item">
         <a class="nav-link"
-           routerLink="include-paths"
+           [routerLink]="appRoutes.INCLUDE_PATHS"
            routerLinkActive="active">includePaths</a>
       </li>
       <li class="nav-item">
         <a class="nav-link"
-           routerLink="dynamic-form"
+           [routerLink]="appRoutes.DYNAMIC_FORM"
            routerLinkActive="active">Dynamic form example</a>
       </li>
     </ul>
