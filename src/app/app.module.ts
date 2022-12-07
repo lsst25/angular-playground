@@ -12,7 +12,8 @@ import { SelfVsHostComponent } from './self-vs-host/self-vs-host.component';
 import { IncludePathsComponent } from './include-paths/include-paths.component';
 import { DirDirective } from './self-vs-host/dir.directive';
 import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
-import { SomeLibModule } from "./some-lib/some-lib.module";
+import { SomeLibModule } from "./tree-shaking-example/some-lib/some-lib.module";
+import { TreeShakingExampleComponent } from './tree-shaking-example/tree-shaking-example.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { SomeLibModule } from "./some-lib/some-lib.module";
         ParentDirDirective,
         SelfVsHostComponent,
         IncludePathsComponent,
+        TreeShakingExampleComponent,
     ],
     imports: [
         BrowserModule,

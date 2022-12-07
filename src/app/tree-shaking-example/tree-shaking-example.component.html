@@ -1,0 +1,9 @@
+<h1>Tree shaking example</h1>
+<app-used-component></app-used-component>
+<p>There is a component above from SomeLib module that is imported to App module</p>
+<p>There is also an unused component in that module</p>
+<p>
+  And if we build an app with or without that unused component or we change some contents of it
+  we will see that even a build hash will not change.
+  Hence unused components in imported modules will not get to the final bundle of application
+</p>

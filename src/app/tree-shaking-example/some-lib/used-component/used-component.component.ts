@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-used-component',
   template: `
     <p>
-      used-component works!
+      This is used-component!
     </p>
   `,
   styles: [
