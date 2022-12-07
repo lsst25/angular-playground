@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
+import {AppRoutes} from "./app-routing.module";
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>APP COMPONENT</h1>
-    <app-used-component></app-used-component>
-  `,
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'test-project';
+  readonly appRoutes = AppRoutes;
 }
