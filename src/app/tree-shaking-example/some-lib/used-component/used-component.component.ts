@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-used-component',
   template: `
-    <p>
+    <p class="border p-1">
       This is used-component!
     </p>
   `,
