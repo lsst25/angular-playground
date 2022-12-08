@@ -15,11 +15,11 @@ export enum AppRoutes {
 }
 
 const routes: Routes = [
-  { path: AppRoutes.SELF_VS_HOST, component: SelfVsHostComponent },
-  { path: AppRoutes.INCLUDE_PATHS, component: IncludePathsComponent },
-  { path: AppRoutes.DYNAMIC_FORM, component: DynamicFormExampleComponent },
-  { path: AppRoutes.TREE_SHAKING, component: TreeShakingExampleComponent },
-  { path: AppRoutes.DOM_MANIPULATIONS, component: DomManipulationsComponent },
+  { path: AppRoutes.SELF_VS_HOST, component: SelfVsHostComponent, title: 'Self vs Host' },
+  { path: AppRoutes.INCLUDE_PATHS, component: IncludePathsComponent, title: 'Include paths' },
+  { path: AppRoutes.DYNAMIC_FORM, component: DynamicFormExampleComponent, title: 'Dynamic form' },
+  { path: AppRoutes.TREE_SHAKING, component: TreeShakingExampleComponent, title: 'Tree shaking' },
+  { path: AppRoutes.DOM_MANIPULATIONS, component: DomManipulationsComponent, title: 'DOM manipulations' },
   { path: '**', redirectTo: 'self-vs-host' },
 ];
 
