@@ -14,6 +14,7 @@ import { DirDirective } from './self-vs-host/dir.directive';
 import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
 import { SomeLibModule } from "./tree-shaking-example/some-lib/some-lib.module";
 import { TreeShakingExampleComponent } from './tree-shaking-example/tree-shaking-example.component';
+import { DomManipulationsComponent } from './dom-manipulations/dom-manipulations.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { TreeShakingExampleComponent } from './tree-shaking-example/tree-shaking
         SelfVsHostComponent,
         IncludePathsComponent,
         TreeShakingExampleComponent,
+        DomManipulationsComponent,
     ],
     imports: [
         BrowserModule,
