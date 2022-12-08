@@ -15,6 +15,7 @@ import { ParentDirDirective } from './self-vs-host/parent-dir.directive';
 import { SomeLibModule } from "./tree-shaking-example/some-lib/some-lib.module";
 import { TreeShakingExampleComponent } from './tree-shaking-example/tree-shaking-example.component';
 import { DomManipulationsComponent } from './dom-manipulations/dom-manipulations.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { DomManipulationsComponent } from './dom-manipulations/dom-manipulations
         IncludePathsComponent,
         TreeShakingExampleComponent,
         DomManipulationsComponent,
+        HeaderComponent,
     ],
     imports: [
         BrowserModule,
